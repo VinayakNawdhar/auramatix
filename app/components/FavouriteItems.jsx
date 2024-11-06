@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const CartItem = () => {
+const FavouriteItems = () => {
     return (
         <div className='flex my-3'>
             <div className='w-[30%]'>
@@ -14,11 +14,9 @@ const CartItem = () => {
                 </div>
                 <div className='flex items-center gap-2'>
                     <div className='flex rounded-lg overflow-hidden border-2 border-gray-200'>
-                        <div className='p-2 h-8 w-8 flex justify-center items-center text-center bg-white'><i className="ri-subtract-line"></i></div>
-                        <div className='p-2 h-8 w-8 flex justify-center items-center text-center'>1</div>
-                        <div className='p-2 h-8 w-8 flex justify-center items-center text-center bg-white'><i className="ri-add-line"></i></div>
+                        <button className='bg-[#9E7F53] px-5 py-2 text-white text-sm'>Add to Cart</button>
                     </div>
-                    <p className='border-r-2 border-[#3B2E00] pr-3 text-nowrap'>x <span className='font-semibold text-[12px]'>Rs. 249</span></p>
+                    <div className='h-full w-[2px] bg-[#3B2E00]'></div>
                     <i className="ri-delete-bin-6-line border-l-2 text-lg border-2 border-[#3B2E00] p-1 rounded-md"></i>
                 </div>
             </div>
@@ -26,4 +24,4 @@ const CartItem = () => {
     )
 }
 
-export default CartItem
+export default FavouriteItems
