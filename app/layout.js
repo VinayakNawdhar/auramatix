@@ -1,9 +1,13 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import {Poppins} from 'next/font/google'
-import 'remixicon/fonts/remixicon.css'
+import { Poppins } from "next/font/google";
+import "remixicon/fonts/remixicon.css";
+import ReduxProvider from "@/redux/ReduxProvider";
 
-const poppins = Poppins({subsets : ['latin'],weight : ['100','200','300','400']})
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400"],
+});
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -36,7 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${poppins.className} text-[#3B2E00] px-5 pb-12 ${AmiriReg.variable} ${AmiriBold.variable} bg-[#EFEFEF] antialiased`}
       >
-        {children}
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );
