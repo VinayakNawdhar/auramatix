@@ -11,6 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily:{
+        amirireg : ['var(--font-amiri-reg)'],
+        amiribold : ['var(--font-amiri-bold)']
+      }
     },
   },
   plugins: [],
