@@ -2,7 +2,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {Poppins} from 'next/font/google'
 import 'remixicon/fonts/remixicon.css'
-import BottomNav from "./components/BottomNav";
 
 const poppins = Poppins({subsets : ['latin'],weight : ['100','200','300','400']})
 const geistSans = localFont({
@@ -38,7 +37,6 @@ export default function RootLayout({ children }) {
         className={`${poppins.className} text-[#3B2E00] px-5 pb-12 ${AmiriReg.variable} ${AmiriBold.variable} bg-[#EFEFEF] antialiased`}
       >
         {children}
-        <BottomNav/>
       </body>
     </html>
   );
