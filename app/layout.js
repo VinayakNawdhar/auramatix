@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} text-[#3B2E00] px-5 ${AmiriReg.variable} ${AmiriBold.variable} bg-[#EFEFEF] antialiased`}
+        className={`${poppins.className} text-[#3B2E00] px-5 pb-12 ${AmiriReg.variable} ${AmiriBold.variable} bg-[#EFEFEF] antialiased`}
       >
         {children}
         <BottomNav/>
